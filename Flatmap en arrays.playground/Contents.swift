@@ -1,3 +1,3 @@
-let array: [Int?] = [Int("4"), Int("6"), Int("9")]
+let matrix: [[Int]] = [[2, 4], [6, 8], [7, 10]]
 
-print(array.flatMap { $0 })
+print(matrix.flatMap { $0 })
