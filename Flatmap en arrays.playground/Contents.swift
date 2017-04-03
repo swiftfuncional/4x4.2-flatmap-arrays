@@ -1,3 +1,11 @@
-let matrix: [[Int]] = [[2, 4], [6, 8], [7, 10]]
+let optionals: [Int?] = [2, 4, nil, 6, 8, nil, 10]
 
-print(matrix.flatMap { $0 })
+let squares: [Int] = optionals.flatMap {
+	guard let x = $0 else {
+		return nil
+	}
+
+	return x*x
+}
+
+print(squares)
